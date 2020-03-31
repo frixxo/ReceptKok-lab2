@@ -1,19 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bacc18b5-6586-4785-8b2d-1be8d8ff00ef" name="Default Changelist" comment="" />
+    <list default="true" id="bacc18b5-6586-4785-8b2d-1be8d8ff00ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lab2_backend__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/backendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/RecipeSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/RecipeSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/RecipeSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/RecipeSearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/recipe_search.css" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/recipe_search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/recipe_search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/recipe_search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/RecipeSearch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/RecipeSearch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_close.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_close_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_close_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_close_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_close_pressed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_difficulty_easy.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_difficulty_easy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_difficulty_hard.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_difficulty_hard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_difficulty_medium.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_difficulty_medium.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_africa.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_africa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_asia.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_asia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_france.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_france.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_greece.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_greece.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_india.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_india.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_flag_sweden.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_flag_sweden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_main_beef.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_main_beef.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_main_chicken.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_main_chicken.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_main_fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_main_fish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_main_meat.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_main_meat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_main_veg.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_main_veg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/icon_time.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/icon_time.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch/resources/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/build/classes/recipesearch/resources/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/RecipeSearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/RecipeSearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/RecipeSearch.jar" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/RecipeSearch.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/RecipeSearch.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/RecipeSearch.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/lib/lab2-backend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/lib/lab2-backend.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/dtjava.js" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/dtjava.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/error.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/get_java.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/get_java.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/get_javafx.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/get_javafx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/javafx-chrome.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/javafx-chrome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/javafx-loading-100x100.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/javafx-loading-25x25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/upgrade_java.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/upgrade_java.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/dist/web-files/upgrade_javafx.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/dist/web-files/upgrade_javafx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/lib/lab2-backend.jar" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/lib/lab2-backend.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/configs/Run_as_WebStart.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/configs/Run_in_Browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/configs/Run_in_Browser.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/genfiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/jfx-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/configs/Run_as_WebStart.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/configs/Run_in_Browser.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/retriever/catalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/retriever/catalog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/private/retriever/www.oracle.com/technetwork/java/javase/overview/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/RecipeSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/RecipeSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/RecipeSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/RecipeSearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/recipe_search.css" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/recipe_search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/recipe_search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/recipe_search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/RecipeSearch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/RecipeSearch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_close.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_close_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_close_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_close_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_close_pressed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_easy.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_easy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_hard.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_hard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_medium.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_difficulty_medium.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_africa.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_africa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_asia.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_asia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_france.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_france.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_greece.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_greece.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_india.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_india.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_flag_sweden.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_flag_sweden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_main_beef.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_main_beef.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_main_chicken.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_main_chicken.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_main_fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_main_fish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_main_meat.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_main_meat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_main_veg.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_main_veg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/icon_time.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/icon_time.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/out/production/RecipeSearch/recipesearch/resources/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/out/production/RecipeSearch/recipesearch/resources/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/chicken-tikka-masala.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/chicken-tikka-masala.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/coq-au-vin-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/coq-au-vin-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/fisksoppa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/fisksoppa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/fransk-kött-och-grönsaksgryta.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/fransk-kött-och-grönsaksgryta.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/glasnudlar-och-lovbiff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/glasnudlar-och-lovbiff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/helstekt-kyckling-med-kryddsmor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/helstekt-kyckling-med-kryddsmor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/kokande-vatten.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/kokande-vatten.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/kottfarslimpa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/kottfarslimpa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/kryddmarinerat-kott-med-syrliga-gronsaker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/kryddmarinerat-kott-med-syrliga-gronsaker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/kyckling-med-sotsur-sas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/kyckling-med-sotsur-sas.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/laxpaket-med-fankal-och-spenat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/laxpaket-med-fankal-och-spenat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/quinoasallad-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/quinoasallad-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/recipe1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/recipe1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/recipes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/recipes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/stekta-ägg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/stekta-ägg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/tagine-yassa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/tagine-yassa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/recipes/ugnsrostad-kyckling-och-ris-pa-alas-vis.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/backendStuff/recipes/ugnsrostad-kyckling-och-ris-pa-alas-vis.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/RecipeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/RecipeSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/RecipeSearch.properties" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/RecipeSearch.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_close.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_close_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_close_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_close_pressed.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_close_pressed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_difficulty_easy.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_difficulty_easy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_difficulty_hard.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_difficulty_hard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_difficulty_medium.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_difficulty_medium.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_africa.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_africa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_asia.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_asia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_france.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_france.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_greece.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_greece.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_india.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_india.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_flag_sweden.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_flag_sweden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_main_beef.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_main_beef.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_main_chicken.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_main_chicken.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_main_fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_main_fish.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_main_meat.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_main_meat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_main_veg.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_main_veg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/icon_time.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/icon_time.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/resources/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/resources/logo.png" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZszODfY035p3CHyfDBNG8nlkei" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RecipeSearch/src" />
+      <recent name="$PROJECT_DIR$/RecipeSearch/backendStuff" />
+      <recent name="$PROJECT_DIR$/RecipeSearch" />
+      <recent name="$PROJECT_DIR$/RecipeSearch/build/classes/recipesearch" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -39,5 +181,16 @@
       <updated>1585642555361</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
