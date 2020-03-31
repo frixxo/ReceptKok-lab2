@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bacc18b5-6586-4785-8b2d-1be8d8ff00ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/ListItem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/RecipeListItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/RecipeSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RecipeSearch/src/recipesearch/RecipeSearchController.java" afterDir="false" />
     </list>

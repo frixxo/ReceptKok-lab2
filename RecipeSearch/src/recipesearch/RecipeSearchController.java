@@ -15,6 +15,7 @@ public class RecipeSearchController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
+        updateRecipeList();
     }
     public void updateSearch(){
 
@@ -27,7 +28,7 @@ public class RecipeSearchController implements Initializable {
         //recipeListFlowPane.getChildren().clear();
 
         for(Recipe r:backend.getRecipes()){
-            new RecipeListItem(r)
+            new RecipeListItem(r,this);
             //recipeListFlowPane.getChildren().add();
         }
 
