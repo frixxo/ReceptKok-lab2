@@ -56,13 +56,13 @@
                               </VBox>
                               <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                  <children>
-                                    <Spinner prefHeight="25.0" prefWidth="149.0" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kr" wrappingWidth="11.1328125" />
+                                    <Spinner prefHeight="27.0" prefWidth="134.0" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kr" wrappingWidth="13.1328125" />
                                  </children>
                               </HBox>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Huvudingridiens:" textAlignment="RIGHT" wrappingWidth="99.490234375" GridPane.rowIndex="3" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Huvudingridiens:" textAlignment="RIGHT" wrappingWidth="95.490234375" GridPane.rowIndex="3" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kök:" GridPane.rowIndex="4" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Svårighetsgrad:" GridPane.rowIndex="5" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Svårighetsgrad:" wrappingWidth="88.11865234375" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="TOP" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maxpris:" GridPane.rowIndex="6" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maxtid:" GridPane.rowIndex="7" />
                            </children>
