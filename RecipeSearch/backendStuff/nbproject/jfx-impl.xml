@@ -4,7 +4,7 @@
 ***       EDIT ../build.xml INSTEAD       ***
 -->
 
-<project name="jfx-impl" default="jfx-deployment" basedir=".." xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" 
+<project name="jfx-impl" default="jfx-deployment" basedir="../../.." xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1"
          xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:fx="javafx:com.sun.javafx.tools.ant">
     <description>JavaFX-specific Ant calls</description>
 
@@ -825,7 +825,7 @@
         <echo message="do.set.webstart.in.unix = ${do.set.webstart.in.unix}" level="verbose"/>
     </target>
     <target name="-set-webstart-in-unix" depends="-set-webstart-in-envjdk,-check-webstart-in-unix" if="do.set.webstart.in.unix">
-        <property name="active.webstart.executable" value="${exec.which.javaws.output}"/>
+        <property name="active.webstart.executable" value="jfx-impl.xml"/>
     </target>
     <target name="-pre-check-jfx-webstart" depends="-set-webstart-in-unix">
         <echo message="active.webstart.executable = ${active.webstart.executable}" level="verbose"/>
@@ -1408,13 +1408,13 @@
     
     <target name="-new-temp-mainfest-existence">
         <condition property="new-temp-manifest-exists">
-            <available file="${move.file.from}"/>
+            <available file="jfx-impl.xml"/>
         </condition>
         <echo message="new-temp-manifest-exists = ${new-temp-manifest-exists}" level="verbose"/>
     </target>
     
     <target name="-move-new-manifest-if-exists" depends="-new-temp-mainfest-existence" if="new-temp-manifest-exists">
-        <move file="${move.file.from}" tofile="${move.file.to}" failonerror="false"/>
+        <move file="jfx-impl.xml" tofile="jfx-impl.xml" failonerror="false"/>
     </target>
     
     <target name="-rebase-libs-macro-call">
@@ -1435,14 +1435,14 @@
     <target name="-check-jfx-deployment-jar-current-nolib" depends="-check-dist-lib-exists" unless="dist.lib.exists">
         <uptodate property="jfx-deployment-jar-current" targetfile="${jfx.deployment.dir}${file.separator}${jfx.deployment.jar}" >
             <srcfiles dir="${basedir}${file.separator}${build.classes.dir}" includes="**${file.separator}*"/>
-            <srcfiles dir="${basedir}${file.separator}nbproject" includes="**${file.separator}*"/>
+            <srcfiles dir="/RecipeSearch/backendStuff/nbproject" includes="**${file.separator}*"/>
         </uptodate>
     </target>
     <target name="-check-jfx-deployment-jar-current-lib" depends="-check-dist-lib-exists" if="dist.lib.exists">
         <uptodate property="jfx-deployment-jar-current" targetfile="${jfx.deployment.dir}${file.separator}${jfx.deployment.jar}" >
             <srcfiles dir="${basedir}${file.separator}${build.classes.dir}" includes="**${file.separator}*"/>
             <srcfiles dir="${jfx.deployment.dir}${file.separator}lib" includes="**${file.separator}*"/>
-            <srcfiles dir="${basedir}${file.separator}nbproject" includes="**${file.separator}*"/>
+            <srcfiles dir="/RecipeSearch/backendStuff/nbproject" includes="**${file.separator}*"/>
         </uptodate>
     </target>
     <target name="-check-jfx-deployment-launch" depends="-check-jfx-deployment,-check-jfx-deployment-jar-current-nolib,-check-jfx-deployment-jar-current-lib">
@@ -2051,7 +2051,7 @@
             <echo message="deploy_deploy: pp_deploy_fs1 = ${pp_deploy_fs1}" level="verbose"/>
             <echo message="deploy_deploy: pp_deploy_fs2 = ${pp_deploy_fs2}" level="verbose"/>
             <echo message="JavaScript: deploy-deploy" level="verbose"/>
-            <basename property="jfx.deployment.base" file="${jfx.deployment.jar}" suffix=".jar"/>
+            <basename property="jfx.deployment.base" file="jfx-impl.xml" suffix=".jar"/>
             <script language="javascript">
                 <![CDATA[
                     function isTrue(prop) {
@@ -3634,14 +3634,14 @@
         <echo message="Creating temp run dir" level="verbose"/>
         <tempfile property="temp.run.dir" destDir="${basedir}${file.separator}${dist.dir}${file.separator}" prefix="run"/>
         <echo message="temp.run.dir = ${temp.run.dir}" level="verbose"/>
-        <copy todir="${temp.run.dir}" includeemptydirs="true" overwrite="true">
+        <copy todir="jfx-impl.xml" includeemptydirs="true" overwrite="true">
             <fileset dir="${basedir}${file.separator}${dist.dir}">
                 <exclude name="**${file.separator}bundles${file.separator}**"/>
                 <exclude name="**${file.separator}run*${file.separator}**"/>
             </fileset>
         </copy>        
-        <property name="temp.run.jar" value="${temp.run.dir}${file.separator}${jfx.deployment.jar}"/>
-        <basename property="jfx.deployment.base" file="${jfx.deployment.jar}" suffix=".jar"/>
+        <property name="temp.run.jar" value="/RecipeSearch/backendStuff/nbproject/jfx-impl.xml"/>
+        <basename property="jfx.deployment.base" file="jfx-impl.xml" suffix=".jar"/>
         <property name="temp.run.jnlp" value="${temp.run.dir}${file.separator}${jfx.deployment.base}.jnlp"/>
         <property name="temp.run.html" value="${temp.run.dir}${file.separator}${jfx.deployment.base}.html"/>
     </target>
@@ -3709,7 +3709,7 @@
     <target name="-check-clean-if-config-changed" depends="-init-project">
         <deploy-defines/>
         <uptodate property="jfx.deployment.jar.newer.than.nbproject" targetfile="${jfx.deployment.dir}${file.separator}${jfx.deployment.jar}" >
-            <srcfiles dir="${basedir}${file.separator}nbproject" includes="**${file.separator}*"/>
+            <srcfiles dir="/RecipeSearch/backendStuff/nbproject" includes="**${file.separator}*"/>
         </uptodate>
         <echo message="jfx.deployment.jar.newer.than.nbproject = ${jfx.deployment.jar.newer.than.nbproject}" level="verbose"/>
         <available file="${jfx.deployment.dir}${file.separator}${jfx.deployment.jar}" type="file" property="jfx.deployment.jar.exists"/>
@@ -3757,11 +3757,11 @@
     <!-- Running/Debugging/Profiling as WebStart -->
 
     <target name="-check-jnlp-file-fx" depends="-swing-api-check" unless="fx-in-swing-app-workaround">
-        <basename property="jfx.deployment.base" file="${jfx.deployment.jar}" suffix=".jar"/>
+        <basename property="jfx.deployment.base" file="jfx-impl.xml" suffix=".jar"/>
         <property name="jfx.deployment.jnlp" location="${jfx.deployment.dir}${file.separator}${jfx.deployment.base}.jnlp"/>
     </target>
     <target name="-check-jnlp-file-swing" depends="-swing-api-check" if="fx-in-swing-app-workaround">
-        <basename property="jfx.deployment.base" file="${jfx.deployment.jar}" suffix=".jar"/>
+        <basename property="jfx.deployment.base" file="jfx-impl.xml" suffix=".jar"/>
         <property name="jfx.deployment.jnlp" location="${jfx.deployment.dir}${file.separator}${jfx.deployment.base}_application.jnlp"/>
     </target>
     <target name="-check-jnlp-file" depends="-check-jnlp-file-fx,-check-jnlp-file-swing">
@@ -3894,20 +3894,20 @@
         <condition property="html-file-exists">
             <and>
                 <isset property="html-template-available"/>
-                <available file="${javafx.run.htmltemplate.processed}"/>
+                <available file="jfx-impl.xml"/>
             </and>
         </condition>
     </target>
     
     <target name="-set-template-processed-html-file" depends="-check-template-processed-html-file" if="html-file-exists">
-        <property name="jfx.deployment.html" location="${javafx.run.htmltemplate.processed}"/>
+        <property name="jfx.deployment.html" location="jfx-impl.xml"/>
     </target>
     
     <target name="-set-html-file" depends="-set-template-processed-html-file" unless="html-file-exists">
-        <basename property="jfx.deployment.base" file="${jfx.deployment.jar}" suffix=".jar"/>
+        <basename property="jfx.deployment.base" file="jfx-impl.xml" suffix=".jar"/>
         <property name="jfx.deployment.html" location="${jfx.deployment.dir}${file.separator}${jfx.deployment.base}.html"/>
         <condition property="html-file-exists">
-            <available file="${jfx.deployment.html}"/>
+            <available file="/RecipeSearch"/>
         </condition>
         <condition property="html-file-exists+netbeans.home">
             <and>
@@ -3929,7 +3929,7 @@
                 </not>
                 <and>
                     <isset property="html-template-available"/>
-                    <available file="${javafx.run.htmltemplate.processed}"/>
+                    <available file="jfx-impl.xml"/>
                 </and>
             </or>
         </condition>
@@ -3969,7 +3969,7 @@
         <exec executable="${javafx.run.inbrowser.path}">
             <arg line="${javafx.run.inbrowser.arguments}"/>
             <env key="_JPI_VM_OPTIONS" value="-agentlib:jdwp=transport=${debug-transport},address=${jpda.address}"/>
-            <arg file="${jfx.deployment.html}"/>
+            <arg file="/RecipeSearch"/>
         </exec>
     </target>
 
@@ -3986,7 +3986,7 @@
         <exec executable="${javafx.run.inbrowser.path}">
             <arg line="${javafx.run.inbrowser.arguments}"/>
             <env key="_JPI_VM_OPTIONS" value="${run.jvmargs.ide}"/>
-            <arg file="${jfx.deployment.html}"/>
+            <arg file="/RecipeSearch"/>
         </exec>
     </target>
 
