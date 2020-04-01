@@ -9,6 +9,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.layout.FlowPane;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 
@@ -29,12 +30,12 @@ public class RecipeSearchController implements Initializable {
     public Spinner     MaxPriceSpinner;
     public Slider      MaxTimeSlider;
 
+    public FlowPane recipeListFlowPane;
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initializeComboboxes();
-
-
 
         updateRecipeList();
     }
@@ -49,7 +50,7 @@ public class RecipeSearchController implements Initializable {
 
     private void updateRecipeList(){
 
-        //recipeListFlowPane.getChildren().clear();     //TODO
+        recipeListFlowPane.getChildren().clear();
 
         for(Recipe r:backend.getRecipes()){
             new ListItem(r,this);
