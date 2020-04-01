@@ -17,16 +17,16 @@ public class RecipeSearchController implements Initializable {
 
     backendController backend=new backendController();
     @FXML
-    ComboBox CuisineCombobox;
-    ComboBox MainIngridientCombobox;
+    public ComboBox CuisineCombobox;
+    public ComboBox MainIngridientCombobox;
 
-    RadioButton AllButton;
-    RadioButton EasyButton;
-    RadioButton MediumButton;
-    RadioButton HardButton;
+    public RadioButton AllButton;
+    public RadioButton EasyButton;
+    public RadioButton MediumButton;
+    public RadioButton HardButton;
 
-    Spinner     MaxPriceSpinner;
-    Slider      MaxTimeSlider;
+    public Spinner     MaxPriceSpinner;
+    public Slider      MaxTimeSlider;
 
 
     ToggleGroup difficultyToggleGroup;
