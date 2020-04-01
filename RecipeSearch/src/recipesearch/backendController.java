@@ -18,6 +18,14 @@ public class backendController {
     public List<Recipe> getRecipes(){
         return DB.search(new SearchFilter(difficulty,maxTime,cuisine,maxPrice,mainIngredient));
     }
+    public List<Recipe> getRecipesName(String name){
+        return DB.search(new SearchFilter(difficulty,maxTime,cuisine,maxPrice,mainIngredient,name));
+    }
+    public List<Recipe> getRecipesAmount(int k){
+        return DB.search(new SearchFilter(difficulty,maxTime,cuisine,maxPrice,mainIngredient), k);
+    }
+
+
     public void setCuisine(String cuisine){
         this.cuisine=cuisine;
     }
@@ -33,7 +41,5 @@ public class backendController {
     public void setMaxTime(int maxTime){
         this.maxTime=maxTime;
     }
-    public List<Recipe> getRecipesName(String name){
-        return DB.search(new SearchFilter(difficulty,maxTime,cuisine,maxPrice,mainIngredient,name));
-    }
+
 }
