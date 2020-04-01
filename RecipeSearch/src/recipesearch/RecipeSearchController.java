@@ -9,27 +9,28 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import recipesearch.ListItem.ListItem;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 
 public class RecipeSearchController implements Initializable {
 
     backendController backend=new backendController();
+    ToggleGroup difficultyToggleGroup;
+
     @FXML
     ComboBox CuisineCombobox;
     ComboBox MainIngridientCombobox;
 
+    @FXML
     RadioButton AllButton;
     RadioButton EasyButton;
     RadioButton MediumButton;
     RadioButton HardButton;
 
+    @FXML
     Spinner     MaxPriceSpinner;
     Slider      MaxTimeSlider;
 
-
-    ToggleGroup difficultyToggleGroup;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -50,7 +51,7 @@ public class RecipeSearchController implements Initializable {
 
     private void updateRecipeList(){
 
-        //recipeListFlowPane.getChildren().clear();
+        //recipeListFlowPane.getChildren().clear();     //TODO
 
         for(Recipe r:backend.getRecipes()){
             new ListItem(r,this);
@@ -58,7 +59,7 @@ public class RecipeSearchController implements Initializable {
         }
     }
 
-    void initializeComboboxes(){
+    private void initializeComboboxes(){
 
         CuisineCombobox.getItems().addAll("Visa alla", "Apa", "Bepa", "Cepa", "Depa");
 
@@ -88,7 +89,7 @@ public class RecipeSearchController implements Initializable {
         });
 
     }
-    void initializeRadiobuttons(){
+    private void initializeRadiobuttons(){
         difficultyToggleGroup = new ToggleGroup();              //skapar togglegroup
 
         AllButton.setToggleGroup(difficultyToggleGroup);        //lägger till alla knappar i gruppen
@@ -113,8 +114,47 @@ public class RecipeSearchController implements Initializable {
         });
     }
 
-    void initializeSpinner(){
-        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 100, 1);
+    private void initializeSpinner(){
 
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 100, 1);
+        MaxPriceSpinner.setValueFactory(valueFactory);
+
+        MaxPriceSpinner.valueProperty().addListener(new ChangeListener<Integer>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
+                backend.setMaxPrice(newValue);
+                updateRecipeList();
+            }
+        });
+
+        MaxPriceSpinner.focusedProperty().addListener(new ChangeListener<Boolean>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+
+                if(newValue){
+                    //focusgained - do nothing
+                }
+                else{
+                    Integer value = Integer.valueOf(MaxPriceSpinner.getEditor().getText());
+                    backend.setMaxPrice(value);
+                    updateRecipeList();
+                }
+
+            }
+        });
+
+    }
+    private void initializeSlider(){
+
+        MaxPriceSpinner.valueProperty().addListener(new ChangeListener<Integer>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
+                backend.setMaxPrice(newValue);
+                updateRecipeList();
+            }
+        });
     }
 }

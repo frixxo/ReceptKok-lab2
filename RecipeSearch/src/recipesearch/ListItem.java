@@ -1,4 +1,4 @@
-package recipesearch.ListItem;
+package recipesearch;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
