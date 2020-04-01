@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Slider?>
@@ -9,6 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -36,15 +38,15 @@
                               <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
                             <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="318.0" minHeight="8.0" prefHeight="42.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="318.0" minHeight="8.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
                               <ImageView fitHeight="95.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Slider prefHeight="14.0" prefWidth="161.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                              <ComboBox prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                              <ComboBox prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="MainIngridientCombobox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <ComboBox fx:id="CuisineCombobox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <children>
                                     <RadioButton mnemonicParsing="false" text="Alla" />
@@ -68,10 +70,28 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Spinner prefHeight="27.0" prefWidth="99.0" />
+                                    <Spinner fx:id="MaxPriceSpinner" prefHeight="27.0" prefWidth="99.0" />
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kr" wrappingWidth="25.0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
+                              <VBox alignment="CENTER" prefHeight="40.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <children>
+                                    <AnchorPane prefHeight="27.0" prefWidth="120.0">
+                                       <children>
+                                          <Slider fx:id="MaxTimeSlider" layoutY="30.0" majorTickUnit="16.666666666666668" max="50.0" minorTickCount="4" prefHeight="19.0" prefWidth="120.0" showTickMarks="true" snapToTicks="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <HBox alignment="TOP_RIGHT" prefHeight="6.0" prefWidth="120.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="50 minuter" textAlignment="RIGHT" wrappingWidth="61.970703125" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
                            </children>
                         </GridPane>
                      </children>
