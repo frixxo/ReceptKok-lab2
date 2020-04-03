@@ -25,6 +25,17 @@
    <children>
       <StackPane prefHeight="500.0" prefWidth="800.0">
          <children>
+            <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FF0000;">
+               <children>
+                  <ImageView fx:id="dispImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                  <Label fx:id="dispLable" layoutX="236.0" layoutY="27.0" prefHeight="27.0" prefWidth="280.0" text="Label" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="27.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dispClose" layoutX="618.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="X" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
             <SplitPane dividerPositions="0.35" prefHeight="500.0" prefWidth="800.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
