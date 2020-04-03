@@ -1,5 +1,6 @@
 package recipesearch;
 
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.image.Image;
@@ -40,6 +41,10 @@ public class ListItem extends AnchorPane {
 
 
         this.parentController = recipeSearchController;
+    }
+    @FXML
+    protected void onClick(Event event){
+        parentController.openRecipeView(recipe);
     }
 }
 

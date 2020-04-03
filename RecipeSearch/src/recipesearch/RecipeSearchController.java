@@ -14,6 +14,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.text.Text;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 
@@ -80,6 +81,11 @@ public class RecipeSearchController implements Initializable {
         dispAnchor.resize(0,0);
     }
 
+    @FXML
+    public void closeRecipeView(){
+        dispAnchor.toBack();
+    }
+    
     void RecipeDetailView (Recipe recipe)
     {
         dispLable.setText(recipe.getName());
