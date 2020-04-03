@@ -182,16 +182,22 @@ public class RecipeSearchController implements Initializable {
             }
         });
 
-       MaxPriceSpinner.focusedProperty().addListener(new ChangeListener<Boolean>() {
+
+        MaxPriceSpinner.focusedProperty().addListener(new ChangeListener<Boolean>() {
 
             @Override
             public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
 
                 if(newValue){
-                    //focusgained - do nothing
+
+
                 }
                 else{
                     Integer value = Integer.valueOf(MaxPriceSpinner.getEditor().getText());
+                    if(value>100) value=100;
+                    if(value<0) value=0;
+                    value-=value%10;
+                    MaxPriceSpinner.getEditor().setText(value+"");
                     backend.setMaxPrice(value);
                     updateRecipeList();
                 }
