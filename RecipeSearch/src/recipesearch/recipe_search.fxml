@@ -123,7 +123,7 @@
                                     </AnchorPane>
                                     <HBox alignment="TOP_RIGHT" prefHeight="6.0" prefWidth="120.0">
                                        <children>
-                                          <ImageView fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fx:id="timeImg" fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../../resources/icon_time.png" />
                                              </image></ImageView>
