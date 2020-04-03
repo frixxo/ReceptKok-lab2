@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.text.Text;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 
@@ -35,6 +36,7 @@ public class RecipeSearchController implements Initializable {
 
     @FXML public AnchorPane dispAnchor;
     @FXML public ImageView dispImage;
+    @FXML public Text dispName;
     @FXML public Button dispClose;
 
     @Override
@@ -69,6 +71,13 @@ public class RecipeSearchController implements Initializable {
         dispAnchor.getChildren().clear();
         dispAnchor.resize(0,0);
     }
+
+    @FXML
+    public void closeRecipeView(){
+        dispAnchor.toBack();
+    }
+    
+
     //region Initializers
     private void initializeComboboxes(){
 
