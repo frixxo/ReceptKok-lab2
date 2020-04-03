@@ -35,6 +35,7 @@ public class RecipeSearchController implements Initializable {
 
     @FXML public AnchorPane dispAnchor;
     @FXML public ImageView dispImage;
+    @FXML public Label dispLable;
     @FXML public Button dispClose;
 
     @Override
@@ -69,6 +70,13 @@ public class RecipeSearchController implements Initializable {
         dispAnchor.getChildren().clear();
         dispAnchor.resize(0,0);
     }
+
+    void RecipeDetailView (Recipe recipe)
+    {
+        dispLable.setText(recipe.getName());
+        dispImage.setImage(recipe.getFXImage());
+    }
+
     //region Initializers
     private void initializeComboboxes(){
 
