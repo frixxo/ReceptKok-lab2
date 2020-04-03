@@ -18,24 +18,27 @@ public class RecipeSearchController implements Initializable {
     backendController backend=new backendController();
     ToggleGroup difficultyToggleGroup;
 
-    @FXML
-    public ComboBox CuisineCombobox;
-    public ComboBox MainIngridientCombobox;
+    @FXML public ComboBox CuisineCombobox;
+    @FXML public ComboBox MainIngridientCombobox;
 
-    public RadioButton AllButton;
-    public RadioButton EasyButton;
-    public RadioButton MediumButton;
-    public RadioButton HardButton;
+    @FXML public RadioButton AllButton;
+    @FXML public RadioButton EasyButton;
+    @FXML  public RadioButton MediumButton;
+    @FXML public RadioButton HardButton;
 
-    public Spinner     MaxPriceSpinner;
-    public Slider      MaxTimeSlider;
+    @FXML public Spinner     MaxPriceSpinner;
+    @FXML public Slider      MaxTimeSlider;
 
-    public FlowPane recipeListFlowPane;
+    @FXML public FlowPane recipeListFlowPane;
 
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initializeComboboxes();
+        initializeRadiobuttons();
+        initializeSlider();
+        initializeSpinner();
+
 
         updateRecipeList();
     }
@@ -53,14 +56,13 @@ public class RecipeSearchController implements Initializable {
         recipeListFlowPane.getChildren().clear();
 
         for(Recipe r:backend.getRecipes()){
-            new ListItem(r,this);
-            //recipeListFlowPane.getChildren().add();
+            recipeListFlowPane.getChildren().add(new ListItem(r,this));
         }
     }
 
     private void initializeComboboxes(){
 
-        CuisineCombobox.getItems().addAll("Visa alla", "Apa", "Bepa", "Cepa", "Depa");
+        CuisineCombobox.getItems().addAll("Visa alla", "Frankrike", "Italien", "Cepa", "Depa");
 
         CuisineCombobox.getSelectionModel().select("Visa alla");
 
@@ -115,7 +117,7 @@ public class RecipeSearchController implements Initializable {
 
     private void initializeSpinner(){
 
-        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 100, 1);
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 0, 100, 1);
         MaxPriceSpinner.setValueFactory(valueFactory);
 
         MaxPriceSpinner.valueProperty().addListener(new ChangeListener<Integer>() {

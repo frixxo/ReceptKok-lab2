@@ -20,21 +20,25 @@ public class ListItem extends AnchorPane {
     @FXML   Text ItemName;
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ListItem.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 
-        //sets pic and name
-        this.ItemName.setText(recipe.getName());
-        this.ItemPicture.setImage(recipe.getFXImage());
+
 
         try {
             fxmlLoader.load();
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
+        //sets pic and name
+        this.recipe=recipe;
+        String s=recipe.getName();
+        this.ItemName.setText(s);
+        this.ItemPicture.setImage(recipe.getFXImage());
 
-        this.recipe = recipe;
+
         this.parentController = recipeSearchController;
     }
 }

@@ -53,7 +53,7 @@
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <children>
                                     <RadioButton fx:id="AllButton" mnemonicParsing="false" text="Alla" />
-                                    <RadioButton fx:id="EasyButto" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Lätt" />
+                                    <RadioButton fx:id="EasyButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Lätt" />
                                     <RadioButton fx:id="MediumButton" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" text="Mellan" />
                                     <RadioButton fx:id="HardButton" layoutX="10.0" layoutY="44.0" mnemonicParsing="false" text="Svår" />
                                  </children>
