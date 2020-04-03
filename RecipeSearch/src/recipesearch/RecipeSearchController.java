@@ -1,6 +1,9 @@
 
 package recipesearch;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +14,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -44,10 +48,29 @@ public class RecipeSearchController implements Initializable {
     @FXML public Label          dispLable;
     @FXML public Button         dispClose;
 
+    @FXML public ImageView logoImage;
+    @FXML public ImageView easyDiffImage;
+    @FXML public ImageView mediumDiffImage;
+    @FXML public ImageView hardDiffImage;
+
+    @FXML public ImageView timeImg;
+
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initializeComboboxes();
-        initializeRadiobuttons();
+        try {
+            initializeRadiobuttons();
+
+            File file=new File("resources");
+            String filePath= file.getAbsolutePath();
+
+            logoImage.setImage(new Image(new FileInputStream(filePath+"/logo.png")));
+            timeImg.setImage(new Image(new FileInputStream(filePath+"/icon_time.png")));
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         initializeSlider();
         initializeSpinner();
 
@@ -113,7 +136,7 @@ public class RecipeSearchController implements Initializable {
         });
 
     }
-    private void initializeRadiobuttons(){
+    private void initializeRadiobuttons() throws FileNotFoundException {
         difficultyToggleGroup = new ToggleGroup();              //skapar togglegroup
 
         AllButton.setToggleGroup(difficultyToggleGroup);        //lägger till alla knappar i gruppen
@@ -123,6 +146,13 @@ public class RecipeSearchController implements Initializable {
 
         AllButton.setSelected(true);                            //väljer All som standard
 
+        //fixar bilder
+        File file=new File("resources");
+        String filePath= file.getAbsolutePath();
+
+        easyDiffImage.setImage(new Image(new FileInputStream(filePath+"/icon_difficulty_easy.png")));
+        mediumDiffImage.setImage(new Image(new FileInputStream(filePath+"/icon_difficulty_medium.png")));
+        hardDiffImage.setImage(new Image(new FileInputStream(filePath+"/icon_difficulty_hard.png")));
 
         difficultyToggleGroup.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
 
