@@ -78,6 +78,7 @@ public class RecipeSearchController implements Initializable {
     {
         dispLable.setText(recipe.getName());
         dispImage.setImage(recipe.getFXImage());
+        dispAnchor.toFront();
     }
 
     //region Initializers
@@ -170,11 +171,11 @@ public class RecipeSearchController implements Initializable {
     }
     private void initializeSlider(){
 
-        MaxPriceSpinner.valueProperty().addListener(new ChangeListener<Integer>() {
+        MaxTimeSlider.valueProperty().addListener(new ChangeListener<Integer>() {
 
             @Override
             public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
-                backend.setMaxPrice(newValue);
+                backend.setMaxTime(newValue);
                 updateRecipeList();
             }
         });

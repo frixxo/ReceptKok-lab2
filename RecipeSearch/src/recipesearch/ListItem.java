@@ -37,11 +37,12 @@ public class ListItem extends AnchorPane {
         this.recipe=recipe;
         String s=recipe.getName();
         this.ItemName.setText(s);
+
+
         this.ItemPicture.setImage(recipe.getFXImage());
-
-
         this.parentController = recipeSearchController;
     }
+    
     @FXML
     protected void onClick(Event event){
         parentController.RecipeDetailView(recipe);
