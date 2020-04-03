@@ -25,23 +25,24 @@ public class RecipeSearchController implements Initializable {
 
     private Map<String, ListItem> recipeListItemMap = new HashMap<String, ListItem>();
 
-    @FXML public ComboBox CuisineCombobox;
-    @FXML public ComboBox MainIngridientCombobox;
+    @FXML public ComboBox       CuisineCombobox;
+    @FXML public ComboBox       MainIngridientCombobox;
 
-    @FXML public RadioButton AllButton;
-    @FXML public RadioButton EasyButton;
-    @FXML  public RadioButton MediumButton;
-    @FXML public RadioButton HardButton;
+    @FXML public RadioButton    AllButton;
+    @FXML public RadioButton    EasyButton;
+    @FXML  public RadioButton   MediumButton;
+    @FXML public RadioButton    HardButton;
 
-    @FXML public Spinner     MaxPriceSpinner;
-    @FXML public Slider      MaxTimeSlider;
+    @FXML public Spinner        MaxPriceSpinner;
+    @FXML public Slider         MaxTimeSlider;
+    @FXML public Text           sliderText;
 
-    @FXML public FlowPane recipeListFlowPane;
+    @FXML public FlowPane       recipeListFlowPane;
 
-    @FXML public AnchorPane dispAnchor;
-    @FXML public ImageView dispImage;
-    @FXML public Label dispLable;
-    @FXML public Button dispClose;
+    @FXML public AnchorPane     dispAnchor;
+    @FXML public ImageView      dispImage;
+    @FXML public Label          dispLable;
+    @FXML public Button         dispClose;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -139,7 +140,7 @@ public class RecipeSearchController implements Initializable {
 
     private void initializeSpinner(){
 
-        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 0, 100, 1);
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 0, 10);
         MaxPriceSpinner.setValueFactory(valueFactory);
 
         MaxPriceSpinner.valueProperty().addListener(new ChangeListener<Integer>() {
@@ -171,12 +172,15 @@ public class RecipeSearchController implements Initializable {
     }
     private void initializeSlider(){
 
-        MaxTimeSlider.valueProperty().addListener(new ChangeListener<Integer>() {
+        MaxTimeSlider.valueProperty().addListener(new ChangeListener<Number>() {
 
             @Override
-            public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
-                backend.setMaxTime(newValue);
-                updateRecipeList();
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                if(newValue != null && !newValue.equals(oldValue) && !MaxTimeSlider.isValueChanging()) {
+                    backend.setMaxTime(newValue.intValue());
+                    sliderText.setText(newValue.intValue()+" Minuter");
+                    updateRecipeList();
+                }
             }
         });
     }
