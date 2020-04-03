@@ -2,6 +2,8 @@
 package recipesearch;
 
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 import javafx.beans.value.ChangeListener;
@@ -19,6 +21,8 @@ public class RecipeSearchController implements Initializable {
 
     backendController backend=new backendController();
     ToggleGroup difficultyToggleGroup;
+
+    private Map<String, ListItem> recipeListItemMap = new HashMap<String, ListItem>();
 
     @FXML public ComboBox CuisineCombobox;
     @FXML public ComboBox MainIngridientCombobox;
@@ -45,6 +49,11 @@ public class RecipeSearchController implements Initializable {
         initializeSlider();
         initializeSpinner();
 
+        for (Recipe recipe: backend.getRecipes())
+        {
+            ListItem recipeListItem = new ListItem(recipe, this);
+            recipeListItemMap.put(recipe.getName(), recipeListItem);
+        }
 
         updateRecipeList();
     }
@@ -62,7 +71,7 @@ public class RecipeSearchController implements Initializable {
         recipeListFlowPane.getChildren().clear();
 
         for(Recipe r:backend.getRecipes()){
-            recipeListFlowPane.getChildren().add(new ListItem(r,this));
+            recipeListFlowPane.getChildren().add(recipeListItemMap.get(r.getName()));
         }
     }
 
