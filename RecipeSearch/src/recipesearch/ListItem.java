@@ -44,7 +44,7 @@ public class ListItem extends AnchorPane {
     }
     @FXML
     protected void onClick(Event event){
-        parentController.openRecipeView(recipe);
+        parentController.RecipeDetailView(recipe);
     }
 }
 

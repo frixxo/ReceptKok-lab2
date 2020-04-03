@@ -50,14 +50,6 @@ public class RecipeSearchController implements Initializable {
         updateRecipeList();
     }
 
-
-    public void updateMaxPrice(){
-        backend.setMaxPrice((int) MaxPriceSpinner.getValue());
-    }
-    public void updateMaxTime(){
-        backend.setMaxTime((int)MaxTimeSlider.getValue());
-    }
-
     private void updateRecipeList(){
 
         recipeListFlowPane.getChildren().clear();
@@ -67,10 +59,6 @@ public class RecipeSearchController implements Initializable {
         }
     }
 
-    public void closeDisplay(){
-        dispAnchor.getChildren().clear();
-        dispAnchor.resize(0,0);
-    }
 
     @FXML
     public void closeRecipeView(){
@@ -94,7 +82,7 @@ public class RecipeSearchController implements Initializable {
 
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                backend.setMainIngredient(newValue);
+                backend.setCuisine(newValue);
                 updateRecipeList();
             }
         });
