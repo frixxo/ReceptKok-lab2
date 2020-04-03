@@ -135,7 +135,7 @@
                                     <Insets />
                                  </opaqueInsets>
                               </VBox>
-                              <Label prefHeight="51.0" prefWidth="134.0" text="Recept sök" GridPane.columnIndex="2">
+                              <Label prefHeight="51.0" prefWidth="134.0" text="Receptsök" GridPane.columnIndex="2">
                                  <font>
                                     <Font name="System Bold Italic" size="24.0" />
                                  </font>
