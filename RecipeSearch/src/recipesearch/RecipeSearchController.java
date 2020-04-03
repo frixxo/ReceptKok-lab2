@@ -182,7 +182,7 @@ public class RecipeSearchController implements Initializable {
             }
         });
 
-        MaxPriceSpinner.focusedProperty().addListener(new ChangeListener<Boolean>() {
+       MaxPriceSpinner.focusedProperty().addListener(new ChangeListener<Boolean>() {
 
             @Override
             public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
