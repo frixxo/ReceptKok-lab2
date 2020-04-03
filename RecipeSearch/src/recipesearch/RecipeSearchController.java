@@ -9,6 +9,8 @@ import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
@@ -31,6 +33,9 @@ public class RecipeSearchController implements Initializable {
 
     @FXML public FlowPane recipeListFlowPane;
 
+    @FXML public AnchorPane dispAnchor;
+    @FXML public ImageView dispImage;
+    @FXML public Button dispClose;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -60,9 +65,14 @@ public class RecipeSearchController implements Initializable {
         }
     }
 
+    public void closeDisplay(){
+        dispAnchor.getChildren().clear();
+        dispAnchor.resize(0,0);
+    }
+    //region Initializers
     private void initializeComboboxes(){
 
-        CuisineCombobox.getItems().addAll("Visa alla", "Frankrike", "Italien", "Cepa", "Depa");
+        CuisineCombobox.getItems().addAll("Visa alla", "Sverige", "Grekland", "Indien", "Asien","Afrika","Frankrike");
 
         CuisineCombobox.getSelectionModel().select("Visa alla");
 
@@ -76,7 +86,7 @@ public class RecipeSearchController implements Initializable {
         });
 
 
-        MainIngridientCombobox.getItems().addAll("Visa alla", "Apa", "Bepa", "Cepa", "Depa");
+        MainIngridientCombobox.getItems().addAll("Visa alla", "Kött", "Fisk", "Kyckling", "Vegetarisk");
 
         MainIngridientCombobox.getSelectionModel().select("Visa alla");
 
@@ -158,4 +168,5 @@ public class RecipeSearchController implements Initializable {
             }
         });
     }
+    //endregion
 }
