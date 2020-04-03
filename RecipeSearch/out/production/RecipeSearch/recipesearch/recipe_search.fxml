@@ -9,6 +9,7 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -58,16 +59,40 @@
                               <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <ImageView fitHeight="95.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <ImageView fitHeight="123.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                                 <image>
+                                    <Image url="@../../resources/logo.png" />
+                                 </image></ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                               <ComboBox fx:id="CuisineCombobox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                               <ComboBox fx:id="MainIngridientCombobox" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                  <children>
                                     <RadioButton fx:id="AllButton" mnemonicParsing="false" text="Alla" />
-                                    <RadioButton fx:id="EasyButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Lätt" />
-                                    <RadioButton fx:id="MediumButton" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" text="Mellan" />
-                                    <RadioButton fx:id="HardButton" layoutX="10.0" layoutY="44.0" mnemonicParsing="false" text="Svår" />
+                                    <RadioButton fx:id="EasyButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Lätt">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../resources/icon_difficulty_easy.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></RadioButton>
+                                    <RadioButton fx:id="MediumButton" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" text="Mellan">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../resources/icon_difficulty_medium.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></RadioButton>
+                                    <RadioButton fx:id="HardButton" layoutX="10.0" layoutY="44.0" mnemonicParsing="false" text="Svår">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../resources/icon_difficulty_hard.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></RadioButton>
                                  </children>
                               </VBox>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Huvudingridiens:" textAlignment="RIGHT" wrappingWidth="95.490234375" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
@@ -98,7 +123,10 @@
                                     </AnchorPane>
                                     <HBox alignment="TOP_RIGHT" prefHeight="6.0" prefWidth="120.0">
                                        <children>
-                                          <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fitHeight="19.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../resources/icon_time.png" />
+                                             </image></ImageView>
                                           <Text fx:id="sliderText" strokeType="OUTSIDE" strokeWidth="0.0" text="0 minuter" textAlignment="RIGHT" wrappingWidth="61.970703125" />
                                        </children>
                                     </HBox>
@@ -107,6 +135,11 @@
                                     <Insets />
                                  </opaqueInsets>
                               </VBox>
+                              <Label prefHeight="51.0" prefWidth="134.0" text="Recept sök" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </GridPane>
                      </children>
