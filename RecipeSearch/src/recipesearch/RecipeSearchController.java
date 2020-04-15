@@ -177,7 +177,12 @@ public class RecipeSearchController implements Initializable {
 
             @Override
             public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
-                backend.setMaxPrice(newValue);
+                Integer value = Integer.valueOf(MaxPriceSpinner.getEditor().getText());
+                if(value>100) value=100;
+                if(value<0) value=0;
+                value-=value%10;
+                MaxPriceSpinner.getEditor().setText(value+"");
+                backend.setMaxPrice(value);
                 updateRecipeList();
             }
         });
@@ -212,11 +217,12 @@ public class RecipeSearchController implements Initializable {
 
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                sliderText.setText(newValue.intValue()+" Minuter");
                 if(newValue != null && !newValue.equals(oldValue) && !MaxTimeSlider.isValueChanging()) {
                     backend.setMaxTime(newValue.intValue());
-                    sliderText.setText(newValue.intValue()+" Minuter");
                     updateRecipeList();
                 }
+
             }
         });
     }
