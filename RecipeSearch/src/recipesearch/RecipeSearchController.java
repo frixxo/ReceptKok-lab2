@@ -93,7 +93,11 @@ public class RecipeSearchController implements Initializable {
             ListItem recipeListItem = new ListItem(recipe, this);
             recipeListItemMap.put(recipe.getName(), recipeListItem);
         }
-        dispClose.setImage();
+        try {
+            setCloseIcon();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         updateRecipeList();
     }
 
@@ -414,10 +418,16 @@ public class RecipeSearchController implements Initializable {
         filePath+="/icon_time.png";
         return new Image(new FileInputStream(filePath));
     }
-    public Image getCloseicon () throws FileNotFoundException {
+    public void setCloseIcon () throws FileNotFoundException {
         File file = new File("resources");
         String filePath = file.getAbsolutePath();
         filePath+="/icon_close.png";
-        return new Image(new FileInputStream(filePath));
+        dispClose.setImage(new Image(new FileInputStream(filePath)));
+    }
+    public void setCloseHoverIcon() throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+        filePath+="/icon_close_hover.png";
+        dispClose.setImage(new Image(new FileInputStream(filePath)));
     }
 }

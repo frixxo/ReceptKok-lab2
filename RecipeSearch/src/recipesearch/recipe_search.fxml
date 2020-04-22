@@ -181,7 +181,7 @@
                         <Text fx:id="dispInstructions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
                      </content>
                   </ScrollPane>
-                  <ImageView fx:id="dispClose" fitHeight="46.0" fitWidth="47.0" layoutX="699.0" layoutY="17.0" onDragOver="#closeHover" onMouseClicked="#closeRecipeView" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                  <ImageView fx:id="dispClose" fitHeight="25.0" fitWidth="25.0" layoutX="699.0" layoutY="17.0" onMouseClicked="#closeRecipeView" onMouseEntered="#setCloseHoverIcon" onMouseExited="#setCloseIcon" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
                </children>
                <StackPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
