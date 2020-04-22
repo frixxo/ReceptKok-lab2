@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -15,10 +16,6 @@
          </font></Text>
       <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="109.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="138.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="ItemDesc" layoutX="109.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" wrappingWidth="374.22900390625">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
+      <Label fx:id="ItemDesc" alignment="TOP_LEFT" layoutX="106.0" layoutY="53.0" prefHeight="44.0" prefWidth="374.0" styleClass="text-small" />
    </children>
 </fx:root>

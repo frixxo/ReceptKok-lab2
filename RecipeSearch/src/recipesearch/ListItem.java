@@ -10,6 +10,7 @@ import javafx.scene.text.Text;
 import recipesearch.RecipeSearchController;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class ListItem extends AnchorPane {
     @FXML   ImageView ItemPicture3;
     @FXML   ImageView ItemPicture4;
     @FXML   Text ItemName;
-    @FXML   Text ItemDesc;
+    @FXML   Label ItemDesc;
 
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
