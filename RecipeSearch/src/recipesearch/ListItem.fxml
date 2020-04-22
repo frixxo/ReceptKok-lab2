@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -8,14 +7,14 @@
 
 <fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" styleClass="text-large" stylesheets="@recipe_search.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="ItemPicture2" fitHeight="24.0" fitWidth="29.0" layoutX="69.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="ItemName" layoutX="109.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" wrappingWidth="374.22900390625">
+      <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ItemPicture2" fitHeight="24.0" fitWidth="29.0" layoutX="68.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="ItemName" layoutX="108.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" wrappingWidth="374.22900390625">
          <font>
             <Font size="18.0" />
          </font></Text>
-      <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="109.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="138.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="ItemDesc" alignment="TOP_LEFT" layoutX="106.0" layoutY="53.0" prefHeight="44.0" prefWidth="374.0" styleClass="text-small" />
+      <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="108.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="137.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="ItemDesc" layoutX="108.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" wrappingWidth="374.22900390625" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="12.77099609375" AnchorPane.topAnchor="55.0" />
    </children>
 </fx:root>
