@@ -20,6 +20,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
+import se.chalmers.ait.dat215.lab2.Ingredient;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 
@@ -48,6 +49,9 @@ public class RecipeSearchController implements Initializable {
     @FXML public ImageView      dispImage;
     @FXML public Label          dispLable;
     @FXML public Button         dispClose;
+    @FXML public Text       dispDescription;
+    @FXML public Text       dispInstructions;
+    @FXML public Text       dispIngridients;
 
     @FXML public ImageView logoImage;
     @FXML public ImageView easyDiffImage;
@@ -103,9 +107,20 @@ public class RecipeSearchController implements Initializable {
     
     void RecipeDetailView (Recipe recipe)
     {
+        String tmp;
         dispLable.setText(recipe.getName());
         dispImage.setImage(recipe.getFXImage());
         dispAnchor.toFront();
+        tmp=recipe.getDescription();
+        dispDescription.setText(recipe.getDescription());
+        tmp=recipe.getInstruction();
+        dispInstructions.setText(recipe.getInstruction());
+
+        for (Ingredient i:recipe.getIngredients()){
+            tmp = dispIngridients.getText();
+            dispIngridients.setText(tmp +"\n " + i.getAmount() + i.getUnit()+ " "+i.getName());
+        }
+
     }
 
     //region Initializers
@@ -256,27 +271,8 @@ public class RecipeSearchController implements Initializable {
                             Image icon = null;
                             String iconPath;
                             try {
-                                switch (item) {
-
-                                    case "Kött":
-                                        iconPath = "/Users/joelOlausson/Documents/GitHub/Lab2/RecipeSearch/resources/icon_main_beef.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        System.out.println("Kött");
-                                        break;
-                                    case "Fisk":
-                                        iconPath = "RecipeSearch/resources/icon_main_fish.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Kyckling":
-                                        iconPath = "RecipeSearch/resources/icon_main_chicken.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Vegetarisk":
-                                        iconPath = "RecipeSearch/resources/icon_main_veg.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                }
-                            } catch (NullPointerException ex) {
+                                icon = getMainIngredientImage(item);
+                            } catch (NullPointerException | FileNotFoundException ex) {
                                 //This should never happen in this lab but could load a default image in case of a NullPointer
                             }
                             ImageView iconImageView = new ImageView(icon);
@@ -311,33 +307,8 @@ public class RecipeSearchController implements Initializable {
                             Image icon = null;
                             String iconPath;
                             try {
-                                switch (item) {
-                                    case "Sverige":
-                                        iconPath = "RecipeSearch/resources/icon_flag_sweden.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Grekland":
-                                        iconPath = "RecipeSearch/resources/icon_flag_greece.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Indien":
-                                        iconPath = "RecipeSearch/resources/icon_flag_india.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Asien":
-                                        iconPath = "RecipeSearch/resources/icon_flag_asia.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Afrika":
-                                        iconPath = "RecipeSearch/resources/icon_flag_africa.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                    case "Frankrike":
-                                        iconPath = "RecipeSearch/resources/icon_flag_france.png";
-                                        icon = new Image(getClass().getClassLoader().getResourceAsStream(iconPath));
-                                        break;
-                                }
-                            } catch (NullPointerException ex) {
+                                icon = getCuisineImage(item);
+                            } catch (NullPointerException | FileNotFoundException ex) {
                                 //This should never happen in this lab but could load a default image in case of a NullPointer
                             }
                             ImageView iconImageView = new ImageView(icon);

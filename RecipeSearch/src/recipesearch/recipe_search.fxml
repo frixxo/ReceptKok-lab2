@@ -26,17 +26,6 @@
    <children>
       <StackPane prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane fx:id="dispAnchor" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FF0000;">
-               <children>
-                  <ImageView fx:id="dispImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                  <Label fx:id="dispLable" layoutX="236.0" layoutY="27.0" prefHeight="27.0" prefWidth="280.0" text="Label" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="27.0">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="dispClose" layoutX="618.0" layoutY="52.0" mnemonicParsing="false" onAction="#closeRecipeView" prefHeight="25.0" prefWidth="25.0" text="X" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-               </children>
-            </AnchorPane>
             <SplitPane dividerPositions="0.35" prefHeight="500.0" prefWidth="800.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -158,6 +147,20 @@
                      </children></AnchorPane>
               </items>
             </SplitPane>
+            <AnchorPane fx:id="dispAnchor" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFFFF;">
+               <children>
+                  <ImageView fx:id="dispImage" fitHeight="165.0" fitWidth="207.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="23.0" />
+                  <Label fx:id="dispLable" layoutX="244.0" layoutY="24.0" prefHeight="27.0" prefWidth="280.0" text="Label" AnchorPane.leftAnchor="244.0" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dispClose" layoutX="618.0" layoutY="52.0" mnemonicParsing="false" onAction="#closeRecipeView" prefHeight="25.0" prefWidth="25.0" text="X" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Text fx:id="dispInstructions" layoutX="244.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="515.0" />
+                  <Text fx:id="dispDescription" layoutX="244.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="515.0" />
+                  <Text fx:id="dispIngridients" layoutX="32.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="171.22900390625" />
+               </children>
+            </AnchorPane>
          </children>
       </StackPane>
    </children>

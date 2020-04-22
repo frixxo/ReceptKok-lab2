@@ -15,6 +15,6 @@
          </font></Text>
       <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="108.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="137.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="ItemDesc" layoutX="108.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" wrappingWidth="374.22900390625" />
+      <Text fx:id="ItemDesc" layoutX="108.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" wrappingWidth="374.22900390625" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="12.77099609375" AnchorPane.topAnchor="55.0" />
    </children>
 </fx:root>
