@@ -48,7 +48,7 @@ public class ListItem extends AnchorPane {
         String s=recipe.getName();
         this.ItemName.setText(s);
         this.ItemDesc.setText(recipe.getDescription());
-        this.ItemTime.setText(recipe.getTime()+"");
+        this.ItemTime.setText(recipe.getTime()+"min");
 
 
         try {
