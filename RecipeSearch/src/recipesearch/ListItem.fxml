@@ -5,12 +5,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" styleClass="text-large" stylesheets="@recipe_search.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="ItemName" layoutX="111.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="182.22900390625">
+      <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ItemPicture2" fitHeight="24.0" fitWidth="29.0" layoutX="69.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="ItemName" layoutX="109.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" wrappingWidth="374.22900390625">
          <font>
             <Font size="18.0" />
          </font></Text>
+      <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="109.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="138.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="ItemDesc" layoutX="109.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" wrappingWidth="374.22900390625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
    </children>
 </fx:root>
