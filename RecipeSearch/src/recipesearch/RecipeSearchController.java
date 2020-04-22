@@ -396,4 +396,11 @@ public class RecipeSearchController implements Initializable {
             default: return null;
         }
     }
+
+    public Image getTimeIcon () throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+        filePath+="/icon_time.png";
+        return new Image(new FileInputStream(filePath));
+    }
 }

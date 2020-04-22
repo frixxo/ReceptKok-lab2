@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" styleClass="text-large" stylesheets="@recipe_search.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" styleClass="list-item" stylesheets="@recipe_search.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="ItemPicture2" fitHeight="24.0" fitWidth="29.0" layoutX="68.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
@@ -13,8 +13,10 @@
          <font>
             <Font size="18.0" />
          </font></Text>
-      <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="108.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ItemTimeP" fitHeight="20.0" fitWidth="22.0" layoutX="284.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="ItemPicture4" fitHeight="24.0" fitWidth="92.0" layoutX="137.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
       <Text fx:id="ItemDesc" layoutX="108.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" wrappingWidth="374.22900390625" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="12.77099609375" AnchorPane.topAnchor="55.0" />
+      <Text fx:id="ItemTime" layoutX="235.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" textAlignment="RIGHT" wrappingWidth="41.0" />
+      <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="108.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </fx:root>
