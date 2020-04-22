@@ -11,6 +11,7 @@ import recipesearch.RecipeSearchController;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ListItem extends AnchorPane {
@@ -18,7 +19,11 @@ public class ListItem extends AnchorPane {
     private RecipeSearchController parentController;
     private Recipe recipe;
     @FXML   ImageView ItemPicture;
+    @FXML   ImageView ItemPicture2;
+    @FXML   ImageView ItemPicture3;
+    @FXML   ImageView ItemPicture4;
     @FXML   Text ItemName;
+
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
 
@@ -40,6 +45,12 @@ public class ListItem extends AnchorPane {
 
 
         this.ItemPicture.setImage(recipe.getFXImage());
+        try {
+            this.ItemPicture2.setImage(recipeSearchController.getCuisineImage(recipe.getCuisine()));
+        } catch (FileNotFoundException e)
+        {
+
+        }
         this.parentController = recipeSearchController;
     }
     

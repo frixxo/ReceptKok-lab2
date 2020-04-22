@@ -59,10 +59,13 @@
                               <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <ImageView fx:id="logoImage" fitHeight="123.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                              <ImageView fx:id="logoImage" fitHeight="66.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT">
                                  <image>
                                     <Image url="@../../resources/logo.png" />
-                                 </image></ImageView>
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" top="15.0" />
+                                 </GridPane.margin></ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                               <ComboBox fx:id="CuisineCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                               <ComboBox fx:id="MainIngridientCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="2" />
@@ -135,12 +138,12 @@
                                     <Insets />
                                  </opaqueInsets>
                               </VBox>
+                              <Text id="logo" strokeType="OUTSIDE" strokeWidth="0.0" text="Recept" textAlignment="CENTER" wrappingWidth="161.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                               <Label id="logo-twirl" layoutX="155.0" layoutY="41.0" prefHeight="93.0" prefWidth="122.0" text="Sök" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                                  <font>
-                                    <Font name="System Bold Italic" size="24.0" />
+                                    <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Text id="logo" strokeType="OUTSIDE" strokeWidth="0.0" text="Recept" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                            </children>
                         </GridPane>
                      </children>

@@ -227,4 +227,32 @@ public class RecipeSearchController implements Initializable {
         });
     }
     //endregion
+
+    public Image getCuisineImage(String cuisine) throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+
+        switch (cuisine) {
+            case "Sverige":
+                filePath += "/icon_flag_sweden.png";
+                return new Image(new FileInputStream(filePath));
+            case "Frankrike":
+                filePath += "/icon_flag_france.png";
+                return new Image(new FileInputStream(filePath));
+            case "Afrika":
+                filePath += "/icon_flag_africa.png";
+                return new Image(new FileInputStream(filePath));
+            case "Asien":
+                filePath += "/icon_flag_asia.png";
+                return new Image(new FileInputStream(filePath));
+            case "Grekland":
+                filePath += "/icon_flag_greece.png";
+                return new Image(new FileInputStream(filePath));
+            case "Indien":
+                filePath += "/icon_flag_india.png";
+                return new Image(new FileInputStream(filePath));
+            default:
+                return null;
+        }
+    }
 }
