@@ -51,3 +51,7 @@
 .text-area  {
     -fx-background-color: -fx-background;
 }
+
+.fog-pane {
+    -fx-background-color: rgba(0,0,0,0.75);
+}
