@@ -39,3 +39,7 @@
 .list-item:pressed{
     -fx-background-color:  #D0D0D0;
 }
+
+#slider:hover{
+    -fx-cursor: crosshair;
+}
