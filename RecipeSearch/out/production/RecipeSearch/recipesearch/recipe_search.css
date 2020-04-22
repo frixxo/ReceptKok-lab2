@@ -15,10 +15,12 @@
 
 #logo{
     -fx-font-size: 48px;
-    -fx-font-family: "Phosphor"
+    -fx-font-family: "Kalam";
 }
 
 #logo-twirl{
-    -fx-font-size: 64px;
-    -fx-font-family: "Lobster"
+    -fx-font-size: 50px;
+    -fx-font-family: "Great Vibes";
+    -fx-text-fill: #FFAC33;
+    -fx-rotate: -20;
 }
