@@ -1,5 +1,5 @@
 package recipesearch;
-
+import java.io.FileNotFoundException;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,8 +12,8 @@ import javafx.scene.text.TextFlow;
 import recipesearch.RecipeSearchController;
 import se.chalmers.ait.dat215.lab2.Recipe;
 
-import java.awt.*;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -27,6 +27,8 @@ public class ListItem extends AnchorPane {
     @FXML   ImageView ItemPicture4;
     @FXML   Text ItemName;
     @FXML   Text ItemDesc;
+    @FXML   Text ItemTime;
+    @FXML   ImageView ItemTimeP;
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
 
@@ -46,7 +48,12 @@ public class ListItem extends AnchorPane {
         String s=recipe.getName();
         this.ItemName.setText(s);
         this.ItemDesc.setText(recipe.getDescription());
+        this.ItemTime.setText(recipe.getTime()+"");
 
+
+        try {
+            this.ItemTimeP.setImage(recipeSearchController.getTimeIcon());
+        } catch (FileNotFoundException e){}
 
         this.ItemPicture.setImage(recipe.getFXImage());
         try {
