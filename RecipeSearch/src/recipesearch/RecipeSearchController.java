@@ -48,7 +48,7 @@ public class RecipeSearchController implements Initializable {
     @FXML public AnchorPane     dispAnchor;
     @FXML public ImageView      dispImage;
     @FXML public Label          dispLable;
-    @FXML public Button         dispClose;
+    @FXML public ImageView      dispClose;
     @FXML public Text           dispDescription;
     @FXML public Text           dispInstructions;
     @FXML public Text           dispIngridients;
@@ -93,7 +93,7 @@ public class RecipeSearchController implements Initializable {
             ListItem recipeListItem = new ListItem(recipe, this);
             recipeListItemMap.put(recipe.getName(), recipeListItem);
         }
-
+        dispClose.setImage();
         updateRecipeList();
     }
 
@@ -119,6 +119,7 @@ public class RecipeSearchController implements Initializable {
         dispAnchor.toFront();
         dispDescription.setText(recipe.getDescription());
         dispInstructions.setText(recipe.getInstruction());
+        dispIngridients.setText("");
         for (Ingredient i:recipe.getIngredients()){
             tmp = dispIngridients.getText();
             dispIngridients.setText(tmp + i.getAmount() + i.getUnit()+ " "+i.getName()+"\n ");
@@ -411,6 +412,12 @@ public class RecipeSearchController implements Initializable {
         File file = new File("resources");
         String filePath = file.getAbsolutePath();
         filePath+="/icon_time.png";
+        return new Image(new FileInputStream(filePath));
+    }
+    public Image getCloseicon () throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+        filePath+="/icon_close.png";
         return new Image(new FileInputStream(filePath));
     }
 }

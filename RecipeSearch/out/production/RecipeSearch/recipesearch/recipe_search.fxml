@@ -156,9 +156,8 @@
                      </font>
                   </Label>
                   <Button fx:id="dispClose" layoutX="618.0" layoutY="52.0" mnemonicParsing="false" onAction="#closeRecipeView" prefHeight="25.0" prefWidth="25.0" text="X" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                  <Text fx:id="dispInstructions" layoutX="233.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
                   <Text fx:id="dispDescription" layoutX="233.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
-                  <ScrollPane layoutX="18.0" layoutY="216.0" prefHeight="265.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                  <ScrollPane layoutX="18.0" layoutY="216.0" prefHeight="265.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="215.0">
                      <content>
                         <Text fx:id="dispIngridients" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" wrappingWidth="171.22900390625" />
                      </content>
@@ -179,6 +178,11 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Text>
+                  <ScrollPane layoutX="231.0" layoutY="216.0" prefHeight="265.0" prefWidth="544.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="215.0">
+                     <content>
+                        <Text fx:id="dispInstructions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
+                     </content>
+                  </ScrollPane>
                </children>
             </AnchorPane>
          </children>
