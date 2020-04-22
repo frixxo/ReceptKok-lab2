@@ -23,6 +23,7 @@ public class ListItem extends AnchorPane {
     @FXML   ImageView ItemPicture3;
     @FXML   ImageView ItemPicture4;
     @FXML   Text ItemName;
+    @FXML   Text ItemDesc;
 
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
@@ -42,6 +43,7 @@ public class ListItem extends AnchorPane {
         this.recipe=recipe;
         String s=recipe.getName();
         this.ItemName.setText(s);
+        this.ItemDesc.setText(recipe.getDescription());
 
 
         this.ItemPicture.setImage(recipe.getFXImage());
