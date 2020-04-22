@@ -47,10 +47,17 @@ public class ListItem extends AnchorPane {
         this.ItemPicture.setImage(recipe.getFXImage());
         try {
             this.ItemPicture2.setImage(recipeSearchController.getCuisineImage(recipe.getCuisine()));
-        } catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e){}
 
-        }
+        try {
+            this.ItemPicture4.setImage(recipeSearchController.getDifficultyImage(recipe.getDifficulty()));
+        } catch (FileNotFoundException e){}
+
+        try {
+            this.ItemPicture3.setImage(recipeSearchController.getMainIngredientImage(recipe.getMainIngredient()));
+        } catch (FileNotFoundException e){}
+
+
         this.parentController = recipeSearchController;
     }
     

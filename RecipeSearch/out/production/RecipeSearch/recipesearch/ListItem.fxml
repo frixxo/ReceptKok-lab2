@@ -9,7 +9,7 @@
    <children>
       <ImageView fx:id="ItemPicture" fitHeight="75.0" fitWidth="84.0" layoutX="11.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="ItemPicture2" fitHeight="24.0" fitWidth="29.0" layoutX="66.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fx:id="ItemName" layoutX="111.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="182.22900390625">
+      <Text fx:id="ItemName" layoutX="106.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" wrappingWidth="374.22900390625">
          <font>
             <Font size="18.0" />
          </font></Text>

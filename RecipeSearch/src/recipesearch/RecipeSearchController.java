@@ -255,4 +255,48 @@ public class RecipeSearchController implements Initializable {
                 return null;
         }
     }
+
+    public Image getDifficultyImage (String diff) throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+
+        switch (diff) {
+            case "Lätt":
+                filePath += "/icon_difficulty_easy.png";
+                return new Image(new FileInputStream(filePath));
+            case "Mellan":
+                filePath += "/icon_difficulty_medium.png";
+                return new Image(new FileInputStream(filePath));
+            case "Svår":
+                filePath += "/icon_difficulty_Hard.png";
+                return new Image(new FileInputStream(filePath));
+            default:
+                return null;
+        }
+    }
+
+    public Image getMainIngredientImage (String ingr) throws FileNotFoundException {
+        File file = new File("resources");
+        String filePath = file.getAbsolutePath();
+
+        switch (ingr)
+        {
+            case "Biff":
+                filePath += "/icon_main_beef.png";
+                return new Image(new FileInputStream(filePath));
+            case "Kyckling":
+                filePath += "/icon_main_chicken.png";
+                return new Image(new FileInputStream(filePath));
+            case "Fisk":
+                filePath += "/icon_main_fish.png";
+                return new Image(new FileInputStream(filePath));
+            case "Kött":
+                filePath += "/icon_main_meat.png";
+                return new Image(new FileInputStream(filePath));
+            case "Vegetarisk":
+                filePath += "/icon_main_veg.png";
+                return new Image(new FileInputStream(filePath));
+            default: return null;
+        }
+    }
 }
