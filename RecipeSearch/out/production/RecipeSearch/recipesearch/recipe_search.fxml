@@ -66,7 +66,7 @@
                                  <GridPane.margin>
                                     <Insets left="10.0" top="15.0" />
                                  </GridPane.margin></ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="254.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                               <ComboBox fx:id="CuisineCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                               <ComboBox fx:id="MainIngridientCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">

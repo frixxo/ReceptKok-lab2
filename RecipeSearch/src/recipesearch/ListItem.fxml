@@ -18,5 +18,6 @@
       <Text fx:id="ItemDesc" layoutX="108.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" wrappingWidth="374.22900390625" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="12.77099609375" AnchorPane.topAnchor="55.0" />
       <Text fx:id="ItemTime" layoutX="235.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" textAlignment="RIGHT" wrappingWidth="41.0" />
       <ImageView fx:id="ItemPicture3" fitHeight="24.0" fitWidth="29.0" layoutX="108.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="ItemCost" layoutX="313.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-small" text="Text" textAlignment="RIGHT" wrappingWidth="41.0" />
    </children>
 </fx:root>

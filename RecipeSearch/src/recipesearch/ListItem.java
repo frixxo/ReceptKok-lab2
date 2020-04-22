@@ -29,6 +29,7 @@ public class ListItem extends AnchorPane {
     @FXML   Text ItemDesc;
     @FXML   Text ItemTime;
     @FXML   ImageView ItemTimeP;
+    @FXML   Text ItemCost;
 
     public ListItem(Recipe recipe, RecipeSearchController recipeSearchController){
 
@@ -48,8 +49,8 @@ public class ListItem extends AnchorPane {
         String s=recipe.getName();
         this.ItemName.setText(s);
         this.ItemDesc.setText(recipe.getDescription());
-        this.ItemTime.setText(recipe.getTime()+"min");
-
+        this.ItemTime.setText(recipe.getTime()+" min");
+        this.ItemCost.setText(recipe.getPrice()+" kr");
 
         try {
             this.ItemTimeP.setImage(recipeSearchController.getTimeIcon());
