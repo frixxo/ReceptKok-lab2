@@ -49,9 +49,16 @@ public class RecipeSearchController implements Initializable {
     @FXML public ImageView      dispImage;
     @FXML public Label          dispLable;
     @FXML public Button         dispClose;
-    @FXML public Text       dispDescription;
-    @FXML public Text       dispInstructions;
-    @FXML public Text       dispIngridients;
+    @FXML public Text           dispDescription;
+    @FXML public Text           dispInstructions;
+    @FXML public Text           dispIngridients;
+    @FXML public ImageView      dispCuisine;
+    @FXML public ImageView      dispMainIngridient;
+    @FXML public ImageView      dispTimeImage;
+    @FXML public ImageView      dispDifficulty;
+    @FXML public Text           dispPrice;
+    @FXML public Text           dispTime;
+
 
     @FXML public ImageView logoImage;
     @FXML public ImageView easyDiffImage;
@@ -105,21 +112,24 @@ public class RecipeSearchController implements Initializable {
         dispAnchor.toBack();
     }
     
-    void RecipeDetailView (Recipe recipe)
-    {
+    void RecipeDetailView (Recipe recipe) throws FileNotFoundException {
         String tmp;
         dispLable.setText(recipe.getName());
         dispImage.setImage(recipe.getFXImage());
         dispAnchor.toFront();
-        tmp=recipe.getDescription();
         dispDescription.setText(recipe.getDescription());
-        tmp=recipe.getInstruction();
         dispInstructions.setText(recipe.getInstruction());
-
         for (Ingredient i:recipe.getIngredients()){
             tmp = dispIngridients.getText();
-            dispIngridients.setText(tmp +"\n " + i.getAmount() + i.getUnit()+ " "+i.getName());
+            dispIngridients.setText(tmp + i.getAmount() + i.getUnit()+ " "+i.getName()+"\n ");
         }
+
+        dispCuisine.setImage(getCuisineImage(recipe.getCuisine()));
+        dispDifficulty.setImage(getDifficultyImage(recipe.getDifficulty()));
+        dispMainIngridient.setImage(getMainIngredientImage(recipe.getMainIngredient()));
+        dispTimeImage.setImage(getTimeIcon());
+        dispTime.setText(recipe.getTime()+" minuter");
+        dispPrice.setText(recipe.getPrice()+" kr");
 
     }
 

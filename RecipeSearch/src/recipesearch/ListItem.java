@@ -73,7 +73,7 @@ public class ListItem extends AnchorPane {
     }
     
     @FXML
-    protected void onClick(Event event){
+    protected void onClick(Event event) throws FileNotFoundException {
         parentController.RecipeDetailView(recipe);
     }
 }

@@ -55,7 +55,7 @@
                                  <GridPane.margin>
                                     <Insets left="10.0" top="15.0" />
                                  </GridPane.margin></ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="275.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Hitta ett recept som passar genom att ändra inställningarna nedanför" textAlignment="CENTER" wrappingWidth="254.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                               <ComboBox fx:id="CuisineCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                               <ComboBox fx:id="MainIngridientCombobox" prefWidth="150.0" styleClass="text-small" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                               <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
@@ -149,16 +149,36 @@
             </SplitPane>
             <AnchorPane fx:id="dispAnchor" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FFFFFFFF;">
                <children>
-                  <ImageView fx:id="dispImage" fitHeight="165.0" fitWidth="207.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="23.0" />
-                  <Label fx:id="dispLable" layoutX="244.0" layoutY="24.0" prefHeight="27.0" prefWidth="280.0" text="Label" AnchorPane.leftAnchor="244.0" AnchorPane.topAnchor="24.0">
+                  <ImageView fx:id="dispImage" fitHeight="156.0" fitWidth="200.0" layoutX="18.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="22.0" />
+                  <Label fx:id="dispLable" layoutX="233.0" layoutY="23.0" prefHeight="29.0" prefWidth="498.0" text="Label" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="23.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
                   <Button fx:id="dispClose" layoutX="618.0" layoutY="52.0" mnemonicParsing="false" onAction="#closeRecipeView" prefHeight="25.0" prefWidth="25.0" text="X" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                  <Text fx:id="dispInstructions" layoutX="244.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="515.0" />
-                  <Text fx:id="dispDescription" layoutX="244.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="515.0" />
-                  <Text fx:id="dispIngridients" layoutX="32.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="171.22900390625" />
+                  <Text fx:id="dispInstructions" layoutX="233.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
+                  <Text fx:id="dispDescription" layoutX="233.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" text="Text" wrappingWidth="515.0" />
+                  <ScrollPane layoutX="18.0" layoutY="216.0" prefHeight="265.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <content>
+                        <Text fx:id="dispIngridients" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-normal" wrappingWidth="171.22900390625" />
+                     </content>
+                  </ScrollPane>
+                  <ImageView fx:id="dispMainIngridient" fitHeight="31.0" fitWidth="37.0" layoutX="233.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="dispDifficulty" fitHeight="27.0" fitWidth="66.0" layoutX="270.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="dispTimeImage" fitHeight="31.0" fitWidth="37.0" layoutX="343.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+                  <Text fx:id="dispTime" layoutX="387.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" text="? sec" wrappingWidth="76.0" />
+                  <Text fx:id="dispPrice" layoutX="472.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" text="?kr" wrappingWidth="61.970703125" />
+                  <ImageView fx:id="dispCuisine" fitHeight="57.0" fitWidth="66.0" layoutX="142.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+                  <Text layoutX="229.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" text="Tillagning:" wrappingWidth="213.6728515625">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="18.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-large" text="Ingridienser:" wrappingWidth="144.57098782359617">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
          </children>
